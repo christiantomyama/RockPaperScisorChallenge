@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29020.237
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{C63F79D5-B003-4BC5-8511-09BFB4A40174}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{444C50AF-AC26-4518-98CA-8E03EDF2EA42}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{7BF150FD-8D38-4775-ACDD-65BCFC431C8C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RockPaperScissor.Domain", "RockPaperScissor.Domain\RockPaperScissor.Domain.csproj", "{E3274D71-27CA-4FF9-9B76-900566DA31EF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RockPaperScissor.Domain.Test", "RockPaperScissor.Domain.Test\RockPaperScissor.Domain.Test.csproj", "{55789540-501F-4478-B604-4A283F116DD8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RockPaperScissor.Web", "RockPaperScissor.Web\RockPaperScissor.Web.csproj", "{7D6B02A7-23CE-49F1-B98E-1DF77861021C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RockPaperScissor.Services.Api", "RockPaperScissor.Services.Api\RockPaperScissor.Services.Api.csproj", "{77FA984C-8621-4258-8BE5-EFFF468A288F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E3274D71-27CA-4FF9-9B76-900566DA31EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3274D71-27CA-4FF9-9B76-900566DA31EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3274D71-27CA-4FF9-9B76-900566DA31EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3274D71-27CA-4FF9-9B76-900566DA31EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55789540-501F-4478-B604-4A283F116DD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55789540-501F-4478-B604-4A283F116DD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55789540-501F-4478-B604-4A283F116DD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55789540-501F-4478-B604-4A283F116DD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D6B02A7-23CE-49F1-B98E-1DF77861021C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D6B02A7-23CE-49F1-B98E-1DF77861021C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D6B02A7-23CE-49F1-B98E-1DF77861021C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D6B02A7-23CE-49F1-B98E-1DF77861021C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77FA984C-8621-4258-8BE5-EFFF468A288F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77FA984C-8621-4258-8BE5-EFFF468A288F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77FA984C-8621-4258-8BE5-EFFF468A288F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77FA984C-8621-4258-8BE5-EFFF468A288F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E3274D71-27CA-4FF9-9B76-900566DA31EF} = {444C50AF-AC26-4518-98CA-8E03EDF2EA42}
+		{55789540-501F-4478-B604-4A283F116DD8} = {444C50AF-AC26-4518-98CA-8E03EDF2EA42}
+		{7D6B02A7-23CE-49F1-B98E-1DF77861021C} = {C63F79D5-B003-4BC5-8511-09BFB4A40174}
+		{77FA984C-8621-4258-8BE5-EFFF468A288F} = {7BF150FD-8D38-4775-ACDD-65BCFC431C8C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {358D77BC-D2FE-4701-8FB3-4721A94B32D7}
+	EndGlobalSection
+EndGlobal
