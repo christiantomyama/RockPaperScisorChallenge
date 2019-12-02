@@ -1,0 +1,17 @@
+C:\Users\chris\Desktop\rps\RockPaperScissorChallenge\RockPaperScissor.Services.Api\bin\Debug\netcoreapp2.2\RockPaperScissor.Services.Api.deps.json
+C:\Users\chris\Desktop\rps\RockPaperScissorChallenge\RockPaperScissor.Services.Api\bin\Debug\netcoreapp2.2\RockPaperScissor.Services.Api.runtimeconfig.json
+C:\Users\chris\Desktop\rps\RockPaperScissorChallenge\RockPaperScissor.Services.Api\bin\Debug\netcoreapp2.2\RockPaperScissor.Services.Api.runtimeconfig.dev.json
+C:\Users\chris\Desktop\rps\RockPaperScissorChallenge\RockPaperScissor.Services.Api\bin\Debug\netcoreapp2.2\RockPaperScissor.Services.Api.dll
+C:\Users\chris\Desktop\rps\RockPaperScissorChallenge\RockPaperScissor.Services.Api\bin\Debug\netcoreapp2.2\RockPaperScissor.Services.Api.pdb
+C:\Users\chris\Desktop\rps\RockPaperScissorChallenge\RockPaperScissor.Services.Api\obj\Debug\netcoreapp2.2\RockPaperScissor.Services.Api.RazorAssemblyInfo.cache
+C:\Users\chris\Desktop\rps\RockPaperScissorChallenge\RockPaperScissor.Services.Api\obj\Debug\netcoreapp2.2\RockPaperScissor.Services.Api.RazorAssemblyInfo.cs
+C:\Users\chris\Desktop\rps\RockPaperScissorChallenge\RockPaperScissor.Services.Api\obj\Debug\netcoreapp2.2\RockPaperScissor.Services.Api.AssemblyInfoInputs.cache
+C:\Users\chris\Desktop\rps\RockPaperScissorChallenge\RockPaperScissor.Services.Api\obj\Debug\netcoreapp2.2\RockPaperScissor.Services.Api.AssemblyInfo.cs
+C:\Users\chris\Desktop\rps\RockPaperScissorChallenge\RockPaperScissor.Services.Api\obj\Debug\netcoreapp2.2\RockPaperScissor.Services.Api.RazorTargetAssemblyInfo.cache
+C:\Users\chris\Desktop\rps\RockPaperScissorChallenge\RockPaperScissor.Services.Api\obj\Debug\netcoreapp2.2\RockPaperScissor.Services.Api.dll
+C:\Users\chris\Desktop\rps\RockPaperScissorChallenge\RockPaperScissor.Services.Api\obj\Debug\netcoreapp2.2\RockPaperScissor.Services.Api.pdb
+C:\Users\chris\Desktop\rps\RockPaperScissorChallenge\RockPaperScissor.Services.Api\bin\Debug\netcoreapp2.2\RockPaperScissor.Domain.dll
+C:\Users\chris\Desktop\rps\RockPaperScissorChallenge\RockPaperScissor.Services.Api\bin\Debug\netcoreapp2.2\RockPaperScissor.Domain.pdb
+C:\Users\chris\Desktop\rps\RockPaperScissorChallenge\RockPaperScissor.Services.Api\obj\Debug\netcoreapp2.2\RockPaperScissor.Services.Api.csproj.CopyComplete
+C:\Users\chris\Desktop\rps\RockPaperScissorChallenge\RockPaperScissor.Services.Api\obj\Debug\netcoreapp2.2\RockPaperScissor.Services.Api.csprojAssemblyReference.cache
+C:\Users\chris\Desktop\rps\RockPaperScissorChallenge\RockPaperScissor.Services.Api\obj\Debug\netcoreapp2.2\RockPaperScissor.Services.Api.csproj.CoreCompileInputs.cache
