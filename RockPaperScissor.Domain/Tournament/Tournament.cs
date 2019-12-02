@@ -54,14 +54,13 @@ namespace RockPaperScissor.Domain.Tournament
                 throw new WrongNumberOfPlayersError(playerList.Count);
             }
 
-            while (true) {
+            while (true)
+            {
                 object firstElement = playerList[0];
                 object secondElement = playerList[1];
                 if (firstElement is IPlayer && secondElement is IPlayer)
                 {
                     IPlayer winner = Confront.FindWinner(firstElement as IPlayer, secondElement as IPlayer);
-                    Console.WriteLine('p');
-                    Console.WriteLine(winner);
                     return winner;
                 }
 

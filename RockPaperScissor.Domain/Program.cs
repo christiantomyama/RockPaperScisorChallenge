@@ -11,27 +11,49 @@ namespace RockPaperScissor.Domain
     {
         static void Main(string[] args)
         {
-             List<object> list = new List<object>()
-             {
-                //new List<object>()
-                //{
-                //    new Player("ASDA", "R"),
-                //    new Player("QWEQ", "R"),
-                //},
-                //new List<object>()
-                //{
-                //    new Player("asda", "R"),
-                //    new Player("qwer", "R"),
-                //}
+            RpsTournament tournament = RpsTournament.Build();
 
-            };
-            List<object> ll = new List<object>()
+
+            List<object> oneDimentionalList = new List<object>()
             {
-                new string[]{"asda", "R" },
-                new string[]{"qwer", "R" },
+                new Player("Armando", "P"),
+                new Player("Dave", "S"),
             };
 
-            new RpsConfront();
+            List<object> threeDimentionalList = new List<object>()
+             {
+                new List<object>()
+                {
+                    new List<object>()
+                    {
+                        new Player("Armando", "P"), new Player("Dave", "S"),
+                    },
+                    new List<object>()
+                    {
+                        new Player("Richard", "R"), new Player("Michael", "S"),
+                    }
+                },
+                new List<object>()
+                 {
+                    new List<object>()
+                    {
+                        new Player("Allen", "S"), new Player("Omer", "P"),
+                    },
+                    new List<object>()
+                    {
+                        new Player("David E.", "R"), new Player("Richard X", "P"),
+                    }
+                }
+            };
+
+
+            IPlayer firstTournamentWinner = tournament.FindWinner(oneDimentionalList);
+            Console.WriteLine("Simple game winner");
+            Console.WriteLine(firstTournamentWinner + Environment.NewLine);
+
+            IPlayer secondTournamentWinner = tournament.FindWinner(threeDimentionalList);
+            Console.WriteLine("Tournament winner");
+            Console.WriteLine(secondTournamentWinner);
         }
 
     }
