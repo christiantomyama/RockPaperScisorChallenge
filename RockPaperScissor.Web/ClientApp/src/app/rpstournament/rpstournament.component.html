@@ -1,0 +1,33 @@
+
+
+  <fieldset class="scheduler-border">
+    <h1>Rps Tournament</h1>
+    <form #form="ngForm" id="bookForm" (ngSubmit)="onSubmit(form)" autocomplete="off">
+      <div class="row">
+        <div class="col-xl-4 text-xs-center">
+          <div class="mb-3">
+            <input type="hidden" name="id">
+            <div class="form-group">
+              <label>Request Body</label>
+              <textarea class="form-control" required>{{stringjson}}</textarea>
+            </div>
+          </div>
+        </div>
+
+       
+        <div class="col-xl-4 text-xs-center">
+          <div class="mb-3">
+            <div class="wrapper">
+              <button (click)="loadJsonString('1')" class="btn btn-primary">Load Json - part A</button>
+              <button (click)="loadJsonString('2')" class="btn btn-primary">Load Json - part B</button>
+              <button (click)="loadJsonString('3')" class="btn btn-primary">Load Json - extra</button>
+              <button (click)="loadJsonString('3')" class="btn btn-primary pull-right">Find Winner</button>
+              <!--<button type="submit" [disabled]="form.invalid" class="btn btn-primary pull-right">Send Request</button>-->
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </form>
+  </fieldset>
+
