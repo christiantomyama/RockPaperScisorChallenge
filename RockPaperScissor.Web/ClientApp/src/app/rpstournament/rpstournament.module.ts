@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RpstournamentComponent } from './rpstournament.component';
 
+
 @NgModule({
   imports: [
     CommonModule,

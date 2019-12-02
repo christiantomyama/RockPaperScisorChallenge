@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { RpstournamentService } from './rpstournament.service';
+
 
 @Component({
   selector: 'app-rpstournament',
@@ -8,7 +10,9 @@ import { Component, OnInit } from '@angular/core';
 export class RpstournamentComponent implements OnInit {
     stringjson: string;
 
-  constructor() { }
+  constructor(
+    public service: RpstournamentService,
+  ) { }
 
   ngOnInit() {
     this.loadJsonString("2");
@@ -32,16 +36,7 @@ export class RpstournamentComponent implements OnInit {
         ]);
         break;
       case "3":
-        this.stringjson = JSON.stringify([
-          [
-            [["Armando3", "P"], ["Dave", "S"]],
-            [["Richard", "R"], ["Michael", "S"]],
-          ],
-          [
-            [["Allen", "S"], ["Omer", "P"]],
-            [["David E.", "R"], ["Richard X.", "P"]]
-          ]
-        ]);
+        //this.stringjson = this.service.refreshList();
         ;
 
     }
