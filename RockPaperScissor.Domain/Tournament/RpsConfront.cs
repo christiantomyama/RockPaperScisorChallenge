@@ -7,7 +7,7 @@ using System.Text;
 
 namespace RockPaperScissor.Domain.Tournament
 {
-    class RpsConfront : IConfront
+    public class RpsConfront : IConfront
     {
         private Dictionary<string, string> WinCondition { get; set; }
         private string[] ValidCommand { get; set; }

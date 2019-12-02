@@ -4,7 +4,7 @@ using System.Text;
 
 namespace RockPaperScissor.Domain.Exceptions
 {
-    class NoSuchStrategyError : Exception
+    public class NoSuchStrategyError : Exception
     {
         public NoSuchStrategyError(string invalidStrategy) :
             base(ModifyMessage(invalidStrategy))

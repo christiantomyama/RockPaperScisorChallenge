@@ -4,7 +4,7 @@ using System.Text;
 
 namespace RockPaperScissor.Domain.Exceptions
 {
-    class WrongNumberOfPlayersError : Exception
+    public class WrongNumberOfPlayersError : Exception
     {
         public WrongNumberOfPlayersError(int wrongNumberOfPlayer) :
             base(ModifyMessage(wrongNumberOfPlayer))
