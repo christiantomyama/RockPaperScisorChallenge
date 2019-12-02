@@ -16,18 +16,21 @@ namespace RockPaperScissor.Domain.Tournament
         }
         public void MapValidCommand()
         {
-            ValidCommand = new string[] { "R", "P", "S" };
+            ValidCommand = new string[] {
+                RpsCommand.Rock,
+                RpsCommand.Paper,
+                RpsCommand.Scissor
+            };
         }
         public void MapWinCondition()
         {
             WinCondition = new Dictionary<string, string>()
             {
-                {"R", "S"},
-                {"S", "P"},
-                {"P", "R"}
+                {RpsCommand.Rock, RpsCommand.Scissor},
+                {RpsCommand.Scissor, RpsCommand.Paper},
+                {RpsCommand.Paper, RpsCommand.Rock}
             };
 
-            Console.WriteLine(WinCondition["R"]);
         }
 
         public IPlayer FindWinner(IPlayer player1, IPlayer player2)

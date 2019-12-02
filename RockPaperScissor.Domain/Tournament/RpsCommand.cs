@@ -6,6 +6,8 @@ namespace RockPaperScissor.Domain.Tournament
 {
     class RpsCommand
     {
-        public  string Rock { get; set; } = "R" ;
+        public const string Rock = "R";
+        public const string Paper = "P";
+        public const string Scissor = "S";
     }
 }
