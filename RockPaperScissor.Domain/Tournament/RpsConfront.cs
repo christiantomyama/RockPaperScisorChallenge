@@ -1,6 +1,8 @@
-﻿using RockPaperScissor.Domain.Interfaces;
+﻿using RockPaperScissor.Domain.Exceptions;
+using RockPaperScissor.Domain.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace RockPaperScissor.Domain.Tournament
@@ -35,6 +37,15 @@ namespace RockPaperScissor.Domain.Tournament
 
         public IPlayer FindWinner(IPlayer player1, IPlayer player2)
         {
+            if (!ValidCommand.Contains(player1.Command))
+            {
+                throw new NoSuchStrategyError(player1.Command);
+            }
+            if (!ValidCommand.Contains(player2.Command))
+            {
+                throw new NoSuchStrategyError(player2.Command);
+            }
+
             if (player1.Command == player2.Command)
             {
                 return player1;

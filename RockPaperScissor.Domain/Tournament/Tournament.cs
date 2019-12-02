@@ -4,12 +4,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Newtonsoft.Json.Linq;
+using RockPaperScissor.Domain.Exceptions;
 using RockPaperScissor.Domain.Interfaces;
 
 namespace RockPaperScissor.Domain.Tournament
 {
     public class Tournament
     {
+        public int NUMBER_OF_PLAYERS = 2;
         public IConfront Confront { get; set; }
         public Tournament(IConfront confront)
         {
@@ -47,16 +49,17 @@ namespace RockPaperScissor.Domain.Tournament
         //recebe Lista multidimencional de IPlayer e retorna o Vencedor do torneio
         public IPlayer FindWinner(IList playerList)
         {
-            if (playerList.Count == 0)
+            if (playerList.Count != NUMBER_OF_PLAYERS)
             {
-                throw new Exception("List can't be empty on rpsGameWinner");
+                throw new WrongNumberOfPlayersError(playerList.Count);
             }
 
             while (true) {
                 object firstElement = playerList[0];
-                if (firstElement is IPlayer)
+                object secondElement = playerList[1];
+                if (firstElement is IPlayer && secondElement is IPlayer)
                 {
-                    IPlayer winner = Confront.FindWinner(playerList[0] as IPlayer, playerList[1] as IPlayer);
+                    IPlayer winner = Confront.FindWinner(firstElement as IPlayer, secondElement as IPlayer);
                     Console.WriteLine('p');
                     Console.WriteLine(winner);
                     return winner;
@@ -64,6 +67,10 @@ namespace RockPaperScissor.Domain.Tournament
 
                 for (var i = 0; i < playerList.Count; i++)
                 {
+                    if (playerList[i] is IPlayer)
+                    {
+                        continue;
+                    }
                     IList innerList = playerList[i] as IList;
                     IPlayer winner = FindWinner(innerList);
                     playerList[i] = winner;
