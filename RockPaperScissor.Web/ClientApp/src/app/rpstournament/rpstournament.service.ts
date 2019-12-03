@@ -13,7 +13,6 @@ export class RpstournamentService {
   constructor(private http: HttpClient) { }
 
   async findWinner(jsonString) {
-    console.log((jsonString), JSON.parse(jsonString))
     return await axios.post(this.API + 'rpstournament/', JSON.parse(jsonString));
   }
 

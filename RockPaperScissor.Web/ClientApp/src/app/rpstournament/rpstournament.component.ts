@@ -9,7 +9,7 @@ import { RpstournamentService } from './rpstournament.service';
 })
 export class RpstournamentComponent implements OnInit {
   stringjson: string;
-  winner: string;
+  requestResponse: string;
 
   constructor(
     public service: RpstournamentService,
@@ -19,8 +19,12 @@ export class RpstournamentComponent implements OnInit {
     this.loadJsonString(2);
   }
   async findWinner() {
-    this.winner = null;
-    this.winner = JSON.stringify((await this.service.findWinner(this.stringjson)).data);
+    this.requestResponse = null;
+    try {
+      this.requestResponse = 'The winner is: ' + JSON.stringify((await this.service.findWinner(this.stringjson)).data);
+    } catch (e) {
+      this.requestResponse = 'Invalid Json String';
+    }
   }
   loadJsonString(index: number) {
     switch (index) {
