@@ -1,19 +1,19 @@
 import { Component, OnInit } from '@angular/core';
-import { RpstournamentService } from './rpstournament.service';
+import { DueltournamentService } from './dueltournament.service';
 
 
 @Component({
-  selector: 'app-rpstournament',
-  templateUrl: './rpstournament.component.html',
-  styleUrls: ['./rpstournament.component.css']
+  selector: 'app-dueltournament',
+  templateUrl: './dueltournament.component.html',
+  styleUrls: ['./dueltournament.component.css']
 })
-export class RpstournamentComponent implements OnInit {
+export class DueltournamentComponent implements OnInit {
   title: "Rps Tournament";
   stringjson: string;
   requestResponse: string;
 
   constructor(
-    public service: RpstournamentService,
+    public service: DueltournamentService,
   ) { }
 
   ngOnInit() {
@@ -30,37 +30,37 @@ export class RpstournamentComponent implements OnInit {
   loadJsonString(index: number) {
     switch (index) {
       case 1:
-        this.stringjson = JSON.stringify([["Armando", "P"], ["Dave", "S"]]);
+        this.stringjson = JSON.stringify([["Armando", "2"], ["Dave", "5"]]);
         break;
       case 2:
         this.stringjson = JSON.stringify([
           [
-            [["Armando", "P"], ["Dave", "S"]],
-            [["Richard", "R"], ["Michael", "S"]],
+            [["Armando", "2"], ["Dave", "5"]],
+            [["Richard", "15"], ["Michael", "2"]],
           ],
           [
-            [["Allen", "S"], ["Omer", "P"]],
-            [["David E.", "R"], ["Richard X.", "P"]]
+            [["Allen", "6"], ["Omer", "2"]],
+            [["David E.", "7"], ["Richard X.", "1"]]
           ]
         ], null, 2);
         break;
       case 3:
         this.stringjson = JSON.stringify([
           [
-            [["Armando", "P"], ["Dave", "S"]],
+            ["Armando", "23"],
             [
               [
-                ["Armando2", "P"], ["Dave2", "S"],
+                ["Armando2", "2"], ["Dave2", "6"],
               ],
               [
-                [["Allen2", "S"], ["Omer2", "P"]],
-                [["David E.2", "R"], ["Richard X.2", "P"]]
+                [["Allen2", "3"], ["Omer2", "1"]],
+                [["David E.2", "4"], ["Richard X.2", "112"]]
               ]
             ],
           ],
           [
-            [["Allen", "S"], ["Omer", "P"]],
-            [["David E.", "R"], ["Richard X.", "P"]]
+            [["Allen", "1"], ["Omer", "61"]],
+            [["David E.", "1"], ["Richard X.", "1"]]
           ]
         ], null, 2); break;
     }

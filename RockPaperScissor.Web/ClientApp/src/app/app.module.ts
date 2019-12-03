@@ -9,7 +9,8 @@ import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { RpstournamentComponent } from './rpstournament/rpstournament.component';
 import { RpstournamentService } from './rpstournament/rpstournament.service';
-//import { RpstournamentComponent } from './rpstournament/rpstournament.component';
+import { DueltournamentComponent } from './dueltournament/dueltournament.component';
+import { DueltournamentService } from './dueltournament/dueltournament.service';
 
 
 
@@ -18,6 +19,7 @@ import { RpstournamentService } from './rpstournament/rpstournament.service';
     AppComponent,
     NavMenuComponent,
     RpstournamentComponent,
+    DueltournamentComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -26,10 +28,10 @@ import { RpstournamentService } from './rpstournament/rpstournament.service';
     FormsModule,
     RouterModule.forRoot([
       { path: '', component: RpstournamentComponent, pathMatch: 'full' },
-      //{ path: 'rpstournament', component: RpstournamentComponent },
+      { path: 'dueltournament', component: DueltournamentComponent, pathMatch: 'full' },
     ])
   ],
-  providers: [RpstournamentService],
+  providers: [RpstournamentService, DueltournamentService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

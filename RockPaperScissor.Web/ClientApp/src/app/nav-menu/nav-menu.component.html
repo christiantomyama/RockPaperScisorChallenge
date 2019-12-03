@@ -19,7 +19,13 @@
               </a>
             </li>
           </ul>
-
+          <ul class='nav navbar-nav'>
+            <li [routerLinkActive]='["link-active"]' [routerLinkActiveOptions]='{ exact: true }'>
+              <a [routerLink]='["/dueltournament"]' (click)='collapse()'>
+                <span class='glyphicon glyphicon-home'></span> Duel Tournament
+              </a>
+            </li>
+          </ul>
         </div>
     </div>
 </div>
