@@ -51,7 +51,9 @@ namespace RockPaperScissor.Domain.Tournament
                 return player1;
             }
 
-            return WinCondition[player1.Command] == player2.Command ? player1 : player2;
+            return WinCondition[player1.Command] == player2.Command 
+                ? player1 
+                : player2;
         }
 
     }

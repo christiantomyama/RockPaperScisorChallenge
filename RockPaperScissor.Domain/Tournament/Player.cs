@@ -11,7 +11,6 @@ namespace RockPaperScissor.Domain.Tournament
         public string Name { get; set; }
         public string Command { get; set; }
 
-        //public Player(IList args): this(args[0] as string, args[1]) {        }
         public Player(string name, string command)
         {
             Name = name;

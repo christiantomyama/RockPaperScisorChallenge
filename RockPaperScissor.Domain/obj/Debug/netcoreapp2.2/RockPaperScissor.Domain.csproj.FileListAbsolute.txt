@@ -21,4 +21,5 @@ C:\Users\chris\Desktop\rps\RockPaperScissorChallenge\RockPaperScissor.Domain\bin
 C:\Users\chris\Desktop\rps\RockPaperScissorChallenge\RockPaperScissor.Domain\bin\Debug\netcoreapp2.2\Newtonsoft.Json.dll
 C:\Users\chris\Desktop\rps\RockPaperScissorChallenge\RockPaperScissor.Domain\bin\Debug\netcoreapp2.2\Newtonsoft.Json.xml
 C:\Users\chris\Desktop\rps\RockPaperScissorChallenge\RockPaperScissor.Domain\obj\Debug\netcoreapp2.2\RockPaperScissor.Domain.csproj.CopyComplete
+C:\Users\chris\Desktop\rps\RockPaperScissorChallenge\RockPaperScissor.Domain\obj\Debug\netcoreapp2.2\RockPaperScissor.Domain.csprojAssemblyReference.cache
 C:\Users\chris\Desktop\rps\RockPaperScissorChallenge\RockPaperScissor.Domain\obj\Debug\netcoreapp2.2\RockPaperScissor.Domain.csproj.CoreCompileInputs.cache

@@ -15,7 +15,9 @@ namespace RockPaperScissor.Domain.Test
             Player player2 = new Player("Dave", "S");
 
             RpsConfront confront = new RpsConfront();
-            confront.FindWinner(player1, player2);
+            IPlayer winner = confront.FindWinner(player1, player2);
+
+            Assert.Equal(winner, player1);
         }
 
         [Fact]
@@ -25,11 +27,13 @@ namespace RockPaperScissor.Domain.Test
             Player player2 = new Player("Dave", "P");
 
             RpsConfront confront = new RpsConfront();
-            confront.FindWinner(player1, player2);
+            IPlayer winner = confront.FindWinner(player1, player2);
+
+            Assert.Equal(winner, player2);
         }
 
         [Fact]
-        public void TournamentMustBePlayedByTwo()
+        public void TournamentMustBePlayedByTwoPlayer()
         {
             Player player1 = new Player("Armando", "A");
             Player player2 = new Player("Dave", "B");

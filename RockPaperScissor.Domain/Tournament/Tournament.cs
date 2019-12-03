@@ -11,7 +11,7 @@ namespace RockPaperScissor.Domain.Tournament
 {
     public class Tournament
     {
-        public int NUMBER_OF_PLAYERS = 2;
+        public const int NUMBER_OF_PLAYERS = 2;
         public IConfront Confront { get; set; }
         public Tournament(IConfront confront)
         {
@@ -46,7 +46,6 @@ namespace RockPaperScissor.Domain.Tournament
         }
 
 
-        //recebe Lista multidimencional de IPlayer e retorna o Vencedor do torneio
         public IPlayer FindWinner(IList playerList)
         {
             if (playerList.Count != NUMBER_OF_PLAYERS)
