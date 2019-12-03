@@ -16,6 +16,7 @@ Project RockPaper Scissor Challenge
 ## Features
 
  - [x] Web API
+ - [x] DDD
  - [x] Dependency Injection
  - [x] Angular
  - [x] Bootstrap
