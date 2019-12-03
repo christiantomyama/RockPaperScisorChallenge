@@ -21,4 +21,5 @@ Project RockPaper Scissor Challenge
  - [x] Angular
  - [x] Bootstrap
  - [x] Unit Test
+ - [x] Implemented tournament of duel, that returns the most powefull player
 

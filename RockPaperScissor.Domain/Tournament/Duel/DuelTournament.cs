@@ -2,16 +2,16 @@
 
 namespace RockPaperScissor.Domain.Tournament.Duel
 {
-    public class RpsTournament : Tournament
+    public class DuelTournament : Tournament
     {
-        public RpsTournament(IConfront confront) : base(confront)
+        public DuelTournament(IConfront confront) : base(confront)
         {
         }
 
-        public static RpsTournament Build()
+        public static DuelTournament Build()
         {
             IConfront confront = new Confront();
-            return new RpsTournament(confront);
+            return new DuelTournament(confront);
         }
      
 
