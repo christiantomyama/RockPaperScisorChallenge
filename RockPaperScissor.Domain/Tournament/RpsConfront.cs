@@ -1,27 +1,20 @@
-﻿using RockPaperScissor.Domain.Exceptions;
-using RockPaperScissor.Domain.Interfaces;
-using System;
+﻿using RockPaperScissor.Domain.Interfaces;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace RockPaperScissor.Domain.Tournament
 {
     public class RpsConfront : IConfront
     {
         private Dictionary<string, string> WinCondition { get; set; }
-        private string[] ValidCommand { get; set; }
+        private IConfrontValidation ConfrontValidation { get; set; }
         public RpsConfront()
         {
-            MapValidCommand();
+            Init();
             MapWinCondition();
         }
-        public void MapValidCommand()
+        public void Init()
         {
-            ValidCommand = new string[] {
-                RpsCommand.Rock,
-                RpsCommand.Paper,
-                RpsCommand.Scissor
-            };
+            ConfrontValidation = new RpsConfrontValidation();
         }
         public void MapWinCondition()
         {
@@ -36,14 +29,8 @@ namespace RockPaperScissor.Domain.Tournament
 
         public IPlayer FindWinner(IPlayer player1, IPlayer player2)
         {
-            if (!ValidCommand.Contains(player1.Command))
-            {
-                throw new NoSuchStrategyError(player1.Command);
-            }
-            if (!ValidCommand.Contains(player2.Command))
-            {
-                throw new NoSuchStrategyError(player2.Command);
-            }
+            ConfrontValidation.ValidatePlayer(player1);
+            ConfrontValidation.ValidatePlayer(player2);
 
             if (player1.Command == player2.Command)
             {
