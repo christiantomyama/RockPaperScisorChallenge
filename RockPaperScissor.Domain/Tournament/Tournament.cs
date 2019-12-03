@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Newtonsoft.Json.Linq;
 using RockPaperScissor.Domain.Exceptions;
 using RockPaperScissor.Domain.Interfaces;

@@ -1,7 +1,6 @@
 using RockPaperScissor.Domain.Exceptions;
 using RockPaperScissor.Domain.Interfaces;
 using RockPaperScissor.Domain.Tournament;
-using System;
 using Xunit;
 
 namespace RockPaperScissor.Domain.Test

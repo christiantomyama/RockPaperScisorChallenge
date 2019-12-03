@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Text;
-using RockPaperScissor.Domain.Interfaces;
+﻿using RockPaperScissor.Domain.Interfaces;
 
 namespace RockPaperScissor.Domain.Tournament
 {

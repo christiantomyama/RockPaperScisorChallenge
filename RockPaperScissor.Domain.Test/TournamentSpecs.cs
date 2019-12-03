@@ -1,10 +1,7 @@
 ﻿using RockPaperScissor.Domain.Interfaces;
 using RockPaperScissor.Domain.Tournament;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using Xunit;
-using System.Linq;
 using RockPaperScissor.Domain.Exceptions;
 
 namespace RockPaperScissor.Domain.Test

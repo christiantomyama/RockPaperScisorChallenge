@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace RockPaperScissor.Domain.Interfaces
+﻿namespace RockPaperScissor.Domain.Interfaces
 {
     public interface IPlayer
     {
