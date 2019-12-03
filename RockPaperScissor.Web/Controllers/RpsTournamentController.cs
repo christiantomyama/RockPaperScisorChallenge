@@ -13,14 +13,8 @@ namespace RockPaperScissor.Services.Api.Controllers
     [ApiController]
     public class RpsTournamentController : ControllerBase
     {
-        [HttpGet]
-        public ActionResult<string> GetFromBody([FromBody] JArray array)
-        {
-            return Get(array);
-        }
-
-        [HttpGet("{id}")]
-        public ActionResult<string> Get(JArray array)
+        [HttpPost]
+        public ActionResult<string> Post([FromBody] JArray array)
         {
             try
             {

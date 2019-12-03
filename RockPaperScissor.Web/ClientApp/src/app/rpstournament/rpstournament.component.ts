@@ -8,22 +8,26 @@ import { RpstournamentService } from './rpstournament.service';
   styleUrls: ['./rpstournament.component.css']
 })
 export class RpstournamentComponent implements OnInit {
-    stringjson: string;
+  stringjson: string;
+  winner: string;
 
   constructor(
     public service: RpstournamentService,
   ) { }
 
   ngOnInit() {
-    this.loadJsonString("2");
+    this.loadJsonString(2);
   }
-
-  loadJsonString(index: string) {
+  async findWinner() {
+    this.winner = null;
+    this.winner = JSON.stringify((await this.service.findWinner(this.stringjson)).data);
+  }
+  loadJsonString(index: number) {
     switch (index) {
-      case "1":
+      case 1:
         this.stringjson = JSON.stringify([["Armando", "P"], ["Dave", "S"]]);
         break;
-      case "2":
+      case 2:
         this.stringjson = JSON.stringify([
           [
             [["Armando", "P"], ["Dave", "S"]],
@@ -33,12 +37,27 @@ export class RpstournamentComponent implements OnInit {
             [["Allen", "S"], ["Omer", "P"]],
             [["David E.", "R"], ["Richard X.", "P"]]
           ]
-        ]);
+        ], null, 2);
         break;
-      case "3":
-        //this.stringjson = this.service.refreshList();
-        ;
-
+      case 3:
+        this.stringjson = JSON.stringify([
+          [
+            [["Armando", "P"], ["Dave", "S"]],
+            [
+              [
+                ["Armando2", "P"], ["Dave2", "S"],
+              ],
+              [
+                [["Allen2", "S"], ["Omer2", "P"]],
+                [["David E.2", "R"], ["Richard X.2", "P"]]
+              ]
+            ],
+          ],
+          [
+            [["Allen", "S"], ["Omer", "P"]],
+            [["David E.", "R"], ["Richard X.", "P"]]
+          ]
+        ], null, 2); break;
     }
   }
 }

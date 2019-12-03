@@ -17,7 +17,7 @@ namespace RockPaperScissor.Domain.Test
             List<object> playerList = getPlayerList();
             RpsTournament tournament = RpsTournament.Build();
             IPlayer winner = tournament.FindWinner(playerList);
-            Assert.Equal(winner.Name, "Richard");
+            Assert.Equal("Richard", winner.Name);
         }
 
         [Fact]

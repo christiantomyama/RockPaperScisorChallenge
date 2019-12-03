@@ -14,4 +14,6 @@ C:\Users\chris\Desktop\rps\RockPaperScissorChallenge\RockPaperScissor.Services.A
 C:\Users\chris\Desktop\rps\RockPaperScissorChallenge\RockPaperScissor.Services.Api\bin\Debug\netcoreapp2.2\RockPaperScissor.Domain.pdb
 C:\Users\chris\Desktop\rps\RockPaperScissorChallenge\RockPaperScissor.Services.Api\obj\Debug\netcoreapp2.2\RockPaperScissor.Services.Api.csproj.CopyComplete
 C:\Users\chris\Desktop\rps\RockPaperScissorChallenge\RockPaperScissor.Services.Api\obj\Debug\netcoreapp2.2\RockPaperScissor.Services.Api.csprojAssemblyReference.cache
-C:\Users\chris\Desktop\rps\RockPaperScissorChallenge\RockPaperScissor.Services.Api\obj\Debug\netcoreapp2.2\RockPaperScissor.Services.Api.csproj.CoreCompileInputs.cache
+C:\Users\chris\Desktop\rps\RockPaperScissorChallenge\RockPaperScissor.Services.Api\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\chris\Desktop\rps\RockPaperScissorChallenge\RockPaperScissor.Services.Api\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\chris\Desktop\rps\RockPaperScissorChallenge\RockPaperScissor.Services.Api\bin\Debug\netcoreapp2.2\Properties\launchSettings.json

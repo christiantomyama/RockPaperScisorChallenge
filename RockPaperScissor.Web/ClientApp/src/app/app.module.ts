@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { RpstournamentComponent } from './rpstournament/rpstournament.component';
+import { RpstournamentService } from './rpstournament/rpstournament.service';
 //import { RpstournamentComponent } from './rpstournament/rpstournament.component';
 
 
@@ -31,7 +32,7 @@ import { RpstournamentComponent } from './rpstournament/rpstournament.component'
       //{ path: 'rpstournament', component: RpstournamentComponent },
     ])
   ],
-  providers: [HttpModule],
+  providers: [RpstournamentService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
