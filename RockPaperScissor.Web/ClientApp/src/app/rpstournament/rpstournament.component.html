@@ -9,7 +9,7 @@
             <input type="hidden" name="id">
             <div class="form-group">
               <label>Request Body</label>
-              <textarea class="form-control" required>{{stringjson}}</textarea>
+              <textarea class="form-control" name="stringjson" [(ngModel)]='stringjson' required></textarea>
             </div>
           </div>
         </div>
