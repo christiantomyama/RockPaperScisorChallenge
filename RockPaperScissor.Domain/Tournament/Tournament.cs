@@ -10,40 +10,40 @@ namespace RockPaperScissor.Domain.Tournament
     {
         public const int NUMBER_OF_PLAYERS = 2;
         public IConfront Confront { get; set; }
+
         public Tournament(IConfront confront)
         {
             Confront = confront;
         }
-        public IPlayer FindWinner(JArray array)
+        public IPlayer FindWinner(IList array)
         {
             return FindWinner(ConvertJArrayToPlayerList(array));
         }
 
-        private List<object> ConvertJArrayToPlayerList(JArray array)
+        private List<object> ConvertJArrayToPlayerList(IList list)
         {
-            List<object> list = new List<object>();
-            object firstElement = array[0];
-            if (!(firstElement is JArray))
+            List<object> playerList = new List<object>();
+            object firstElement = list[0];
+            if (!(firstElement is IList))
             {
-                string name = array[0].ToString();
-                string command = array[1].ToString();
+                string name = list[0].ToString();
+                string command = list[1].ToString();
                 IPlayer player = new Player(name, command);
 
-                list.Add(player);
+                playerList.Add(player);
 
-                return list;
+                return playerList;
             }
-            foreach (JArray innerArray in array)
+            foreach (IList innerArray in list)
             {
                 List<object> innerList = ConvertJArrayToPlayerList(innerArray);
-                list.Add(innerList.Count == 1 ? innerList[0] : innerList);
+                playerList.Add(innerList.Count == 1 ? innerList[0] : innerList);
             }
 
-            return list;
+            return playerList;
         }
 
-
-        public IPlayer FindWinner(IList playerList)
+        public IPlayer FindWinner(List<object> playerList)
         {
             if (playerList.Count != NUMBER_OF_PLAYERS)
             {
@@ -66,7 +66,7 @@ namespace RockPaperScissor.Domain.Tournament
                     {
                         continue;
                     }
-                    IList innerList = playerList[i] as IList;
+                    List<object> innerList = playerList[i] as List<object>;
                     IPlayer winner = FindWinner(innerList);
                     playerList[i] = winner;
                     if (playerList.Count == 1)

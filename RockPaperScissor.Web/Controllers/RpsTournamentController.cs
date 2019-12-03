@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json.Linq;
 using RockPaperScissor.Domain.Interfaces;
@@ -11,12 +12,12 @@ namespace RockPaperScissor.Services.Api.Controllers
     public class RpsTournamentController : ControllerBase
     {
         [HttpPost]
-        public ActionResult<string> Post([FromBody] JArray array)
+        public ActionResult<string> Post([FromBody] IList list)
         {
             try
             {
                 Tournament tournament = RpsTournament.Build();
-                IPlayer player = tournament.FindWinner(array);
+                IPlayer player = tournament.FindWinner(list);
 
                 return $"[\"{player.Name}\", \"{player.Command}\"]";
             }

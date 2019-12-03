@@ -16,6 +16,7 @@ Project RockPaper Scissor Challenge
 ## Features
 
  - [x] Web API
+ - [x] Dependency Injection
  - [x] Angular
  - [x] Bootstrap
  - [x] Unit Test
