@@ -9,14 +9,13 @@ Project RockPaper Scissor Challenge
 
 ## Install
 
-$  dotnet run -p RockPaperScissor.Web/RockPaperScissor.Web.csproj
+   Run Project RockPaperScissor.Web on SDK
 
 
 
 ## Features
 
  - [x] Web API
- - [x] Migrations
  - [x] Angular
  - [x] Bootstrap
  - [x] Unit Test
