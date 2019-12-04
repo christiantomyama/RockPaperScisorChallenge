@@ -14,15 +14,15 @@ namespace RockPaperScissor.Domain.Tournament.Duel
 
         public IPlayer FindWinner(IPlayer player1, IPlayer player2)
         {
-            int i1 = Int32.Parse(player1.Command);
-            int i2 = Int32.Parse(player2.Command);
+            int power1 = Int32.Parse(player1.Command);
+            int power2 = Int32.Parse(player2.Command);
 
-            if (i1 == i2)
+            if (power1 == power2)
             {
                 return player1;
             }
 
-            return i1 > i2 ? player1 : player2;
+            return power1 > power2 ? player1 : player2;
         }
 
     }
